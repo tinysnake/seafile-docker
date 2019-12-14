@@ -5,7 +5,7 @@ INSTALL_DIR=seafile-server-${SEAFILE_VER}
 if [ ! -d ${INSTALL_DIR} ]; then
     wget --progress=dot:mega --no-check-certificate https://download.seadrive.org/seafile-server_${SEAFILE_VER}_x86-64.tar.gz
     tar -xzf seafile-server_${SEAFILE_VER}_x86-64.tar.gz
-    rm ${INSTALL_DIR}/_x86-64.tar.gz
+    rm ${INSTALL_DIR}_x86-64.tar.gz
     bash ${INSTALL_DIR}/setup-seafile.sh auto -n 'seafile' -i '0.0.0.0' -p '8082'
     rm seafile-server-latest
     sed -i 's/bind = "127.0.0.1:8000"/bind = "0.0.0.0:8000"/g' conf/gunicorn.conf
