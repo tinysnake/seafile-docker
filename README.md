@@ -39,3 +39,15 @@ When the docker container is done the file structure will be like:
 Now you can access your seafile web gui through port 8000.
 
 You better change the admin password after the docker container was setup.
+
+# Forgot to set SEAFILE_ADMIN and SEAFILE_ADMIN_PW
+
+Run these commands:
+
+```
+docker exec -it seafile bash
+
+bash seafile-server-${SEAFILE_VER}/reset-admin.sh
+```
+
+Then ctrl+D out.
