@@ -19,6 +19,7 @@ if [ ! -d ${INSTALL_DIR} ]; then
 fi
 
 bash ${INSTALL_DIR}/seafile.sh start
+sleep 5
 bash ${INSTALL_DIR}/seahub.sh start
 
 while pgrep -f "seafile-controller" 2>&1 >/dev/null; do
