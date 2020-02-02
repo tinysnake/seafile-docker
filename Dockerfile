@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-ENV SEAFILE_VER 7.1.1
+ENV SEAFILE_VER 7.0.5
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends tar wget procps
