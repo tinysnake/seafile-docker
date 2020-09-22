@@ -3,7 +3,9 @@
 INSTALL_DIR=seafile-server-${SEAFILE_VER}
 
 if [ ! -d ${INSTALL_DIR} ]; then
-    wget --progress=dot:mega --no-check-certificate https://download.seadrive.org/seafile-server_${SEAFILE_VER}_x86-64.tar.gz
+    if [! -f "seafile-server_${SEAFILE_VER}_x86-64.tar.gz" ]; then
+        wget --progress=dot:mega --no-check-certificate https://download.seadrive.org/seafile-server_${SEAFILE_VER}_x86-64.tar.gz
+    fi
     tar -xzf seafile-server_${SEAFILE_VER}_x86-64.tar.gz
     rm ${INSTALL_DIR}_x86-64.tar.gz
     bash ${INSTALL_DIR}/setup-seafile.sh auto -n 'seafile' -i '0.0.0.0' -p '8082'
