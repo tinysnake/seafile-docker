@@ -79,9 +79,10 @@ You will see `Upgraded your seafile server successfully`, when the upgrade when 
 
 Then press `ctrl+D` to get out.
 
-Delete the old 7.0.x docker container, and run this command:
+Finally run this command:
 
 ```
+docker container rm seafile
 docker run -d --name seafile \
 -p 8000:8000 \
 -p 8082:8082 \
