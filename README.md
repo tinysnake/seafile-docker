@@ -9,6 +9,11 @@ Note: This docker uses **gunicorn** as the HTTP server and **sqlite3** as databa
 
 Current seafile-server version is: **7.1.5**
 
+## Supported tags and respective Dockerfile links
+
+* [`7.1`, `7.1.5`, `latest`](https://github.com/tinysnake/seafile-docker/blob/7.1.5/Dockerfile)
+* [`7.0`, `7.0.5`](https://github.com/tinysnake/seafile-docker/blob/7.0.5/Dockerfile)
+
 ## Warning
 
 The Version 7.1.x is not natively compatible with 7.0.x, You need to run some command to upgrde from 7.0.x to 7.1.x, go to the Upgrade Section for more info.
