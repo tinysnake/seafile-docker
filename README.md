@@ -80,7 +80,7 @@ bash ./seafile-server-${SEAFILE_VER}/upgrade/upgrade_7.0_7.1.sh
 
 Command line will prompt you to press ENTER to continue, just do what it says.
 
-You will see `Upgraded your seafile server successfully`, when the upgrade when right.
+You will see `Upgraded your seafile server successfully`, when the upgrade goes right.
 
 Then press `ctrl+D` to get out.
 
